@@ -6,11 +6,10 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "build:styles": "sass task1/src/styles/index.scss task1/dist/styles.css",
-    "copy:html": "cp task1/src/index.html task1/dist/index.html",
-    "copy:scripts": "cp -R task1/src/scripts task1/dist/scripts",
+    "copy:html": "cp ./src/index.html dist/index.html",
+    "copy:scripts": "cp -R ./src/scripts dist/scripts",
     "clean": "rm -rf /dist",
-    "build": " npm run clean && npm run build:styles && npm run copy:html && npm run copy:scripts"
+    "build": " npm run clean && npm run copy:html && npm run copy:scripts"
   },
   "repository": {
     "type": "git",
